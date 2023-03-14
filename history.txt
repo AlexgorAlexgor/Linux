@@ -1,0 +1,4 @@
+   0 cd ..
+   1 hystori
+   2 history >
+   3 history >history.txt
