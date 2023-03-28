@@ -1,0 +1,84 @@
+   0 mkdir  /home/user/start
+   1 mkdir -p /home/user/start
+   2 ls -la
+   3 > /home/user/start/1.txt
+   4 cd /home/user/start/
+   5 ls
+   6 cat 1.txt 
+   7 echo 'Start'>>1
+   8 Start >>1.txt 
+   9 echo 'Start'>>1.txt 
+  10 cat 1.txt 
+  11 date
+  12 date -d >> 
+  13 date -d 
+  14 date &d
+  15 date
+  16 date >>1.txt 
+  17 cat 1.txt 
+  18 cat 1.txt | tair
+  19 cat 1.txt | taid
+  20 man
+  21 cat 1.txt | taid 1.txt 
+  22 cat 1.txt | teid 1.txt 
+  23  taid 1.txt 
+  24 help
+  25 help |
+  26 1
+  27 cp 1.txt /opt/task/start.txt 
+  28 cp 1.txt -p /opt/task/start.txt 
+  29 mkdir /opt/task
+  30 cp 1.txt -p /opt/task/start.txt 
+  31 tree
+  32 tree /opt/
+  33 cat 1.txt 
+  34 cat /opt/task/start.txt 
+  35 ls -la /
+  36 cd /
+  37 ls -la 
+  38 ls -la | tail >> /opt/task/start.txt 
+  39 cat /opt/task/start.txt 
+  40  | head -2 > /opt/task/start.txt 
+  41 cat /opt/task/start.txt 
+  42 echo"Start&Date >/opt/task/start.txt  
+  43 echo"Start >/opt/task/start.txt  
+  44 echo"Start" >/opt/task/start.txt  
+  45 cat /opt/task/start.txt 
+  46 echo"Start"
+  47 echo 'Start'
+  48 cd
+  49 ..
+  50 cd..
+  51 clear
+  52 quit
+  53 :q!
+  54 "
+  55 echo 'Start'
+  56 cat /opt/task/start.txt 
+  57 echo 'Start' > /opt/task/start.txt 
+  58 cat /opt/task/start.txt 
+  59 date >> /opt/task/start.txt 
+  60 cat /opt/task/start.txt 
+  61 ls-la |tail -4 >> /opt/task/start.txt 
+  62 cat /opt/task/start.txt 
+  63 ls -la 
+  64 ls -la |tail -4 >> /opt/task/start.txt 
+  65 cat /opt/task/start.txt 
+  66 history
+  67 history >hystory.txt
+  68 cat hystory.txt
+  69 history
+  70 man
+  71 man comand
+  72 man command
+  73 mann
+  74 manhelp _p
+  75 manhelp -
+  76 help -
+  77 export hystory.txt
+  78 export_hystory.txt
+  79 export
+  80 export -p
+  81 export_file history.txt
+  82 export_file /tmp/history.txt
+  83 history > /tmp/history.txt
