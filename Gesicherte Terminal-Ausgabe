@@ -1,0 +1,607 @@
+Last login: Fri Apr 14 19:08:09 on console
+Alexs-MacBook:~ alex$ vi
+Alexs-MacBook:~ alex$ rdw
+-bash: rdw: command not found
+Alexs-MacBook:~ alex$ ls -la
+total 88
+drwxr-xr-x+  21 alex  staff    714 14 Apr 20:06 .
+drwxr-xr-x    5 root  admin    170 15 Mär 14:30 ..
+-r--------    1 alex  staff      7  1 Nov 20:22 .CFUserTextEncoding
+-rw-r--r--@   1 alex  staff  18436  9 Apr 11:00 .DS_Store
+drwx------   41 alex  staff   1394 14 Apr 19:49 .Trash
+-rw-------    1 alex  staff     74  7 Jul  2019 .bash_history
+drwx------    3 alex  staff    102 16 Dez  2016 .cups
+-rw-------    1 root  staff   1024 23 Aug  2019 .rnd
+-rw-------    1 alex  staff    524 14 Apr 20:06 .viminfo
+drwx------    3 alex  staff    102  6 Okt  2016 Applications
+drwx------+   8 alex  staff    272 14 Apr 19:49 Desktop
+drwx------+   9 alex  staff    306  9 Apr 09:18 Documents
+drwx------+ 524 alex  staff  17816 12 Apr 10:20 Downloads
+drwx------@ 820 alex  staff  27880 30 Mai  2017 Google Drive
+-rw-r--r--    1 alex  staff    112  9 Nov 23:31 Key-11.dat
+-rw-r--r--    1 alex  staff   1255  9 Nov 23:31 Key-6.pfx
+drwx------@  50 alex  staff   1700  9 Apr 10:52 Library
+drwx------+   3 alex  staff    102  1 Jan  2015 Movies
+drwx------+   4 alex  staff    136  5 Nov  2016 Music
+drwx------+  12 alex  staff    408 20 Jul  2018 Pictures
+drwxr-xr-x+   5 alex  staff    170  1 Jan  2015 Public
+Alexs-MacBook:~ alex$ mkdir  /tmp
+mkdir: /tmp: File exists
+Alexs-MacBook:~ alex$ ls -la
+total 88
+drwxr-xr-x+  21 alex  staff    714 14 Apr 20:06 .
+drwxr-xr-x    5 root  admin    170 15 Mär 14:30 ..
+-r--------    1 alex  staff      7  1 Nov 20:22 .CFUserTextEncoding
+-rw-r--r--@   1 alex  staff  18436  9 Apr 11:00 .DS_Store
+drwx------   41 alex  staff   1394 14 Apr 19:49 .Trash
+-rw-------    1 alex  staff     74  7 Jul  2019 .bash_history
+drwx------    3 alex  staff    102 16 Dez  2016 .cups
+-rw-------    1 root  staff   1024 23 Aug  2019 .rnd
+-rw-------    1 alex  staff    524 14 Apr 20:06 .viminfo
+drwx------    3 alex  staff    102  6 Okt  2016 Applications
+drwx------+   8 alex  staff    272 14 Apr 19:49 Desktop
+drwx------+   9 alex  staff    306  9 Apr 09:18 Documents
+drwx------+ 524 alex  staff  17816 12 Apr 10:20 Downloads
+drwx------@ 820 alex  staff  27880 30 Mai  2017 Google Drive
+-rw-r--r--    1 alex  staff    112  9 Nov 23:31 Key-11.dat
+-rw-r--r--    1 alex  staff   1255  9 Nov 23:31 Key-6.pfx
+drwx------@  50 alex  staff   1700  9 Apr 10:52 Library
+drwx------+   3 alex  staff    102  1 Jan  2015 Movies
+drwx------+   4 alex  staff    136  5 Nov  2016 Music
+drwx------+  12 alex  staff    408 20 Jul  2018 Pictures
+drwxr-xr-x+   5 alex  staff    170  1 Jan  2015 Public
+Alexs-MacBook:~ alex$ touch  /tmp/file.txt 
+Alexs-MacBook:~ alex$ vi  /tmp/file.txt 
+Alexs-MacBook:~ alex$  df -h 
+Filesystem      Size   Used  Avail Capacity  iused    ifree %iused  Mounted on
+/dev/disk0s2   465Gi  151Gi  314Gi    33% 39530892 82371735   32%   /
+devfs          181Ki  181Ki    0Bi   100%      626        0  100%   /dev
+map -hosts       0Bi    0Bi    0Bi   100%        0        0  100%   /net
+map auto_home    0Bi    0Bi    0Bi   100%        0        0  100%   /home
+Alexs-MacBook:~ alex$ vi  /tmp/file1.txt 
+Alexs-MacBook:~ alex$  df -h >> /tmp/
+.keystone_install_lock        com.google.Keystone/
+com.apple.launchd.1B0TsqPsCH/ file.txt
+com.apple.launchd.NbhGsKzF6U/ 
+Alexs-MacBook:~ alex$  df -h >> /tmp/
+.keystone_install_lock        com.google.Keystone/
+com.apple.launchd.1B0TsqPsCH/ file.txt
+com.apple.launchd.NbhGsKzF6U/ 
+Alexs-MacBook:~ alex$ df -h |head 3 >>  /tmp/file.txt 
+head: 3: No such file or directory
+Alexs-MacBook:~ alex$ df -h |head >>  /tmp/file.txt 
+Alexs-MacBook:~ alex$ cat /tmp/file.txt 
+Filesystem      Size   Used  Avail Capacity  iused    ifree %iused  Mounted on
+/dev/disk0s2   465Gi  151Gi  314Gi    33% 39531100 82371527   32%   /
+devfs          181Ki  181Ki    0Bi   100%      626        0  100%   /dev
+map -hosts       0Bi    0Bi    0Bi   100%        0        0  100%   /net
+map auto_home    0Bi    0Bi    0Bi   100%        0        0  100%   /home
+Alexs-MacBook:~ alex$ df -h |head -3 >>  /tmp/file.txt 
+Alexs-MacBook:~ alex$ df -h |head -3 >>  /tmp/file.txt 
+Alexs-MacBook:~ alex$ cat /tmp/file.txt 
+Filesystem      Size   Used  Avail Capacity  iused    ifree %iused  Mounted on
+/dev/disk0s2   465Gi  151Gi  314Gi    33% 39531100 82371527   32%   /
+devfs          181Ki  181Ki    0Bi   100%      626        0  100%   /dev
+map -hosts       0Bi    0Bi    0Bi   100%        0        0  100%   /net
+map auto_home    0Bi    0Bi    0Bi   100%        0        0  100%   /home
+Filesystem      Size   Used  Avail Capacity  iused    ifree %iused  Mounted on
+/dev/disk0s2   465Gi  151Gi  314Gi    33% 39533497 82369130   32%   /
+devfs          181Ki  181Ki    0Bi   100%      626        0  100%   /dev
+Filesystem      Size   Used  Avail Capacity  iused    ifree %iused  Mounted on
+/dev/disk0s2   465Gi  151Gi  314Gi    33% 39533497 82369130   32%   /
+devfs          181Ki  181Ki    0Bi   100%      626        0  100%   /dev
+Alexs-MacBook:~ alex$ rm /tmp/file.txt 
+Alexs-MacBook:~ alex$ tree /tmp
+-bash: tree: command not found
+Alexs-MacBook:~ alex$ ls la /tmp
+ls: la: No such file or directory
+/tmp:
+com.apple.launchd.1B0TsqPsCH	com.google.Keystone
+com.apple.launchd.NbhGsKzF6U
+Alexs-MacBook:~ alex$ vi  /tmp/file.txt 
+Alexs-MacBook:~ alex$ cat /tmp/file.txt 
+cat: /tmp/file.txt: No such file or directory
+Alexs-MacBook:~ alex$ ls la /tmp
+ls: la: No such file or directory
+/tmp:
+com.apple.launchd.1B0TsqPsCH	com.google.Keystone
+com.apple.launchd.NbhGsKzF6U
+Alexs-MacBook:~ alex$ ls -la /tmp
+lrwxr-xr-x@ 1 root  wheel  11 25 Jun  2015 /tmp -> private/tmp
+Alexs-MacBook:~ alex$ vi  /tmp/file.txt 
+Alexs-MacBook:~ alex$ 
+Alexs-MacBook:~ alex$ 
+Alexs-MacBook:~ alex$ 
+Alexs-MacBook:~ alex$ 
+Alexs-MacBook:~ alex$ 
+Alexs-MacBook:~ alex$ 
+Alexs-MacBook:~ alex$ 
+Alexs-MacBook:~ alex$ 
+Alexs-MacBook:~ alex$ 
+Alexs-MacBook:~ alex$ 
+Alexs-MacBook:~ alex$ 
+Alexs-MacBook:~ alex$ 
+Alexs-MacBook:~ alex$ 
+Alexs-MacBook:~ alex$ 
+Alexs-MacBook:~ alex$ 
+Alexs-MacBook:~ alex$ 
+Alexs-MacBook:~ alex$ 
+Alexs-MacBook:~ alex$ 
+Alexs-MacBook:~ alex$ 
+Alexs-MacBook:~ alex$ 
+Alexs-MacBook:~ alex$ 
+Alexs-MacBook:~ alex$ 
+Alexs-MacBook:~ alex$ ls -la /tmp
+lrwxr-xr-x@ 1 root  wheel  11 25 Jun  2015 /tmp -> private/tmp
+Alexs-MacBook:~ alex$ mkdir /tmp
+mkdir: /tmp: File exists
+Alexs-MacBook:~ alex$ vi  /tmp/file.txt 
+Alexs-MacBook:~ alex$ ls -la /tmp
+lrwxr-xr-x@ 1 root  wheel  11 25 Jun  2015 /tmp -> private/tmp
+Alexs-MacBook:~ alex$ cd tmp
+-bash: cd: tmp: No such file or directory
+Alexs-MacBook:~ alex$ cd /tmp
+Alexs-MacBook:tmp alex$ cd root
+-bash: cd: root: No such file or directory
+Alexs-MacBook:tmp alex$ cd ..
+Alexs-MacBook:/ alex$ cd /tmp
+Alexs-MacBook:tmp alex$ tree /temp
+-bash: tree: command not found
+Alexs-MacBook:tmp alex$ ls
+com.apple.launchd.1B0TsqPsCH	com.google.Keystone
+com.apple.launchd.NbhGsKzF6U	file.txt
+Alexs-MacBook:tmp alex$ cat file.txt
+Alexs-MacBook:tmp alex$ df -h |head -3 >>  file.txt
+Alexs-MacBook:tmp alex$ cat file.txt
+Filesystem      Size   Used  Avail Capacity  iused    ifree %iused  Mounted on
+/dev/disk0s2   465Gi  151Gi  314Gi    33% 39533780 82368847   32%   /
+devfs          182Ki  182Ki    0Bi   100%      628        0  100%   /dev
+Alexs-MacBook:tmp alex$ ls
+com.apple.launchd.1B0TsqPsCH	com.google.Keystone
+com.apple.launchd.NbhGsKzF6U	file.txt
+Alexs-MacBook:tmp alex$ ls -la
+total 8
+drwxrwxrwt  7 root  wheel  238 14 Apr 20:35 .
+drwxr-xr-x@ 6 root  wheel  204 25 Jun  2015 ..
+-rw-rw-rw-  1 alex  wheel    0 14 Apr 20:06 .keystone_install_lock
+drwx------  3 alex  wheel  102 14 Apr 19:08 com.apple.launchd.1B0TsqPsCH
+drwx------  3 alex  wheel  102 14 Apr 19:08 com.apple.launchd.NbhGsKzF6U
+drwxr-xr-x@ 4 alex  wheel  136 14 Apr 19:10 com.google.Keystone
+-rw-r--r--  1 alex  wheel  222 14 Apr 20:38 file.txt
+Alexs-MacBook:tmp alex$ file1.txt gw+
+-bash: file1.txt: command not found
+Alexs-MacBook:tmp alex$ file1.txt chmod  gw+
+-bash: file1.txt: command not found
+Alexs-MacBook:tmp alex$ file1.txt chmod  gw
+-bash: file1.txt: command not found
+Alexs-MacBook:tmp alex$ chmod  gw file.txt
+chmod: Invalid file mode: gw
+Alexs-MacBook:tmp alex$ chmod  gw+ file.txt
+chmod: Invalid file mode: gw+
+Alexs-MacBook:tmp alex$ chmod  gw+ /file.txt
+chmod: Invalid file mode: gw+
+Alexs-MacBook:tmp alex$ chmod  gw+ temp/file.txt
+chmod: Invalid file mode: gw+
+Alexs-MacBook:tmp alex$ chmod  gw file.txt
+chmod: Invalid file mode: gw
+Alexs-MacBook:tmp alex$ chmod gw+ file.txt
+chmod: Invalid file mode: gw+
+Alexs-MacBook:tmp alex$ ls -la
+total 8
+drwxrwxrwt  7 root  wheel  238 14 Apr 20:35 .
+drwxr-xr-x@ 6 root  wheel  204 25 Jun  2015 ..
+-rw-rw-rw-  1 alex  wheel    0 14 Apr 20:06 .keystone_install_lock
+drwx------  3 alex  wheel  102 14 Apr 19:08 com.apple.launchd.1B0TsqPsCH
+drwx------  3 alex  wheel  102 14 Apr 19:08 com.apple.launchd.NbhGsKzF6U
+drwxr-xr-x@ 4 alex  wheel  136 14 Apr 19:10 com.google.Keystone
+-rw-r--r--  1 alex  wheel  222 14 Apr 20:38 file.txt
+Alexs-MacBook:tmp alex$ chmod  ugo w+ file.txt
+chmod: Invalid file mode: ugo
+Alexs-MacBook:tmp alex$ chmod  gw+ file.txt
+chmod: Invalid file mode: gw+
+Alexs-MacBook:tmp alex$ chmod  gw file.txt
+chmod: Invalid file mode: gw
+Alexs-MacBook:tmp alex$ chmod 664 file.txt
+Alexs-MacBook:tmp alex$ ls -la
+total 8
+drwxrwxrwt  7 root  wheel  238 14 Apr 20:35 .
+drwxr-xr-x@ 6 root  wheel  204 25 Jun  2015 ..
+-rw-rw-rw-  1 alex  wheel    0 14 Apr 20:06 .keystone_install_lock
+drwx------  3 alex  wheel  102 14 Apr 19:08 com.apple.launchd.1B0TsqPsCH
+drwx------  3 alex  wheel  102 14 Apr 19:08 com.apple.launchd.NbhGsKzF6U
+drwxr-xr-x@ 4 alex  wheel  136 14 Apr 19:10 com.google.Keystone
+-rw-rw-r--  1 alex  wheel  222 14 Apr 20:38 file.txt
+Alexs-MacBook:tmp alex$ chmod 264 file.txt
+Alexs-MacBook:tmp alex$ ls -la
+total 8
+drwxrwxrwt  7 root  wheel  238 14 Apr 20:35 .
+drwxr-xr-x@ 6 root  wheel  204 25 Jun  2015 ..
+-rw-rw-rw-  1 alex  wheel    0 14 Apr 20:06 .keystone_install_lock
+drwx------  3 alex  wheel  102 14 Apr 19:08 com.apple.launchd.1B0TsqPsCH
+drwx------  3 alex  wheel  102 14 Apr 19:08 com.apple.launchd.NbhGsKzF6U
+drwxr-xr-x@ 4 alex  wheel  136 14 Apr 19:10 com.google.Keystone
+--w-rw-r--  1 alex  wheel  222 14 Apr 20:38 file.txt
+Alexs-MacBook:tmp alex$ chmod 375 file.txt
+Alexs-MacBook:tmp alex$ ls -la
+total 8
+drwxrwxrwt  7 root  wheel  238 14 Apr 20:35 .
+drwxr-xr-x@ 6 root  wheel  204 25 Jun  2015 ..
+-rw-rw-rw-  1 alex  wheel    0 14 Apr 20:06 .keystone_install_lock
+drwx------  3 alex  wheel  102 14 Apr 19:08 com.apple.launchd.1B0TsqPsCH
+drwx------  3 alex  wheel  102 14 Apr 19:08 com.apple.launchd.NbhGsKzF6U
+drwxr-xr-x@ 4 alex  wheel  136 14 Apr 19:10 com.google.Keystone
+--wxrwxr-x  1 alex  wheel  222 14 Apr 20:38 file.txt
+Alexs-MacBook:tmp alex$ history
+    1  /Users/alex/Google\ Drive/AG\ NA/Gründung/AmtG.\ Jena\(Fall-1\) ; exit;
+    2  vi
+    3  rdw
+    4  ls -la
+    5  mkdir  /tmp
+    6  ls -la
+    7  touch  /tmp/file.txt 
+    8  vi  /tmp/file.txt 
+    9*  df -h >> /tmp/
+   10  vi  /tmp/file1.txt 
+   11  df -h |head 3 >>  /tmp/file.txt 
+   12  df -h |head >>  /tmp/file.txt 
+   13  cat /tmp/file.txt 
+   14  df -h |head -3 >>  /tmp/file.txt 
+   15  df -h |head -3 >>  /tmp/file.txt 
+   16  cat /tmp/file.txt 
+   17  rm /tmp/file.txt 
+   18  tree /tmp
+   19  ls la /tmp
+   20  vi  /tmp/file.txt 
+   21  cat /tmp/file.txt 
+   22  ls la /tmp
+   23  ls -la /tmp
+   24  vi  /tmp/file.txt 
+   25  ls -la /tmp
+   26  mkdir /tmp
+   27  vi  /tmp/file.txt 
+   28  ls -la /tmp
+   29  cd tmp
+   30  cd /tmp
+   31  cd root
+   32  cd ..
+   33  cd /tmp
+   34  tree /temp
+   35  ls
+   36  cat file.txt
+   37  df -h |head -3 >>  file.txt
+   38  cat file.txt
+   39  ls
+   40  ls -la
+   41  file1.txt gw+
+   42  file1.txt chmod  gw+
+   43  file1.txt chmod  gw
+   44  chmod  gw file.txt
+   45  chmod  gw+ file.txt
+   46  chmod  gw+ /file.txt
+   47  chmod  gw+ temp/file.txt
+   48  chmod  gw file.txt
+   49  chmod gw+ file.txt
+   50  ls -la
+   51  chmod  ugo w+ file.txt
+   52  chmod  gw+ file.txt
+   53  chmod  gw file.txt
+   54  chmod 664 file.txt
+   55  ls -la
+   56  chmod 264 file.txt
+   57  ls -la
+   58  chmod 375 file.txt
+   59  ls -la
+   60  history
+Alexs-MacBook:tmp alex$ export_histoty
+-bash: export_histoty: command not found
+Alexs-MacBook:tmp alex$ export_file1.txt
+-bash: export_file1.txt: command not found
+Alexs-MacBook:tmp alex$ history> /tmp/history.txt
+Alexs-MacBook:tmp alex$ cat /history.txt
+cat: /history.txt: No such file or directory
+Alexs-MacBook:tmp alex$ cat history.txt
+    1  /Users/alex/Google\ Drive/AG\ NA/Gründung/AmtG.\ Jena\(Fall-1\) ; exit;
+    2  vi
+    3  rdw
+    4  ls -la
+    5  mkdir  /tmp
+    6  ls -la
+    7  touch  /tmp/file.txt 
+    8  vi  /tmp/file.txt 
+    9*  df -h >> /tmp/
+   10  vi  /tmp/file1.txt 
+   11  df -h |head 3 >>  /tmp/file.txt 
+   12  df -h |head >>  /tmp/file.txt 
+   13  cat /tmp/file.txt 
+   14  df -h |head -3 >>  /tmp/file.txt 
+   15  df -h |head -3 >>  /tmp/file.txt 
+   16  cat /tmp/file.txt 
+   17  rm /tmp/file.txt 
+   18  tree /tmp
+   19  ls la /tmp
+   20  vi  /tmp/file.txt 
+   21  cat /tmp/file.txt 
+   22  ls la /tmp
+   23  ls -la /tmp
+   24  vi  /tmp/file.txt 
+   25  ls -la /tmp
+   26  mkdir /tmp
+   27  vi  /tmp/file.txt 
+   28  ls -la /tmp
+   29  cd tmp
+   30  cd /tmp
+   31  cd root
+   32  cd ..
+   33  cd /tmp
+   34  tree /temp
+   35  ls
+   36  cat file.txt
+   37  df -h |head -3 >>  file.txt
+   38  cat file.txt
+   39  ls
+   40  ls -la
+   41  file1.txt gw+
+   42  file1.txt chmod  gw+
+   43  file1.txt chmod  gw
+   44  chmod  gw file.txt
+   45  chmod  gw+ file.txt
+   46  chmod  gw+ /file.txt
+   47  chmod  gw+ temp/file.txt
+   48  chmod  gw file.txt
+   49  chmod gw+ file.txt
+   50  ls -la
+   51  chmod  ugo w+ file.txt
+   52  chmod  gw+ file.txt
+   53  chmod  gw file.txt
+   54  chmod 664 file.txt
+   55  ls -la
+   56  chmod 264 file.txt
+   57  ls -la
+   58  chmod 375 file.txt
+   59  ls -la
+   60  history
+   61  export_histoty
+   62  export_file1.txt
+   63  history> /tmp/history.txt
+Alexs-MacBook:tmp alex$ export_file history.txt 
+-bash: export_file: command not found
+Alexs-MacBook:tmp alex$ export_file /tmp/history.txt 
+-bash: export_file: command not found
+Alexs-MacBook:tmp alex$ export_file /tmp/history.txt
+-bash: export_file: command not found
+Alexs-MacBook:tmp alex$ ls -la
+total 16
+drwxrwxrwt  8 root  wheel   272 14 Apr 21:07 .
+drwxr-xr-x@ 6 root  wheel   204 25 Jun  2015 ..
+-rw-rw-rw-  1 alex  wheel     0 14 Apr 20:06 .keystone_install_lock
+drwx------  3 alex  wheel   102 14 Apr 19:08 com.apple.launchd.1B0TsqPsCH
+drwx------  3 alex  wheel   102 14 Apr 19:08 com.apple.launchd.NbhGsKzF6U
+drwxr-xr-x@ 4 alex  wheel   136 14 Apr 19:10 com.google.Keystone
+--wxrwxr-x  1 alex  wheel   222 14 Apr 20:38 file.txt
+-rw-r--r--  1 alex  wheel  1474 14 Apr 21:07 history.txt
+Alexs-MacBook:tmp alex$ cat history.txt
+    1  /Users/alex/Google\ Drive/AG\ NA/Gründung/AmtG.\ Jena\(Fall-1\) ; exit;
+    2  vi
+    3  rdw
+    4  ls -la
+    5  mkdir  /tmp
+    6  ls -la
+    7  touch  /tmp/file.txt 
+    8  vi  /tmp/file.txt 
+    9*  df -h >> /tmp/
+   10  vi  /tmp/file1.txt 
+   11  df -h |head 3 >>  /tmp/file.txt 
+   12  df -h |head >>  /tmp/file.txt 
+   13  cat /tmp/file.txt 
+   14  df -h |head -3 >>  /tmp/file.txt 
+   15  df -h |head -3 >>  /tmp/file.txt 
+   16  cat /tmp/file.txt 
+   17  rm /tmp/file.txt 
+   18  tree /tmp
+   19  ls la /tmp
+   20  vi  /tmp/file.txt 
+   21  cat /tmp/file.txt 
+   22  ls la /tmp
+   23  ls -la /tmp
+   24  vi  /tmp/file.txt 
+   25  ls -la /tmp
+   26  mkdir /tmp
+   27  vi  /tmp/file.txt 
+   28  ls -la /tmp
+   29  cd tmp
+   30  cd /tmp
+   31  cd root
+   32  cd ..
+   33  cd /tmp
+   34  tree /temp
+   35  ls
+   36  cat file.txt
+   37  df -h |head -3 >>  file.txt
+   38  cat file.txt
+   39  ls
+   40  ls -la
+   41  file1.txt gw+
+   42  file1.txt chmod  gw+
+   43  file1.txt chmod  gw
+   44  chmod  gw file.txt
+   45  chmod  gw+ file.txt
+   46  chmod  gw+ /file.txt
+   47  chmod  gw+ temp/file.txt
+   48  chmod  gw file.txt
+   49  chmod gw+ file.txt
+   50  ls -la
+   51  chmod  ugo w+ file.txt
+   52  chmod  gw+ file.txt
+   53  chmod  gw file.txt
+   54  chmod 664 file.txt
+   55  ls -la
+   56  chmod 264 file.txt
+   57  ls -la
+   58  chmod 375 file.txt
+   59  ls -la
+   60  history
+   61  export_histoty
+   62  export_file1.txt
+   63  history> /tmp/history.txt
+Alexs-MacBook:tmp alex$ export_file history.txt 
+-bash: export_file: command not found
+Alexs-MacBook:tmp alex$ export_file /tmp/history.txt
+-bash: export_file: command not found
+Alexs-MacBook:tmp alex$ export /tmp/history.txt
+-bash: export: `/tmp/history.txt': not a valid identifier
+Alexs-MacBook:tmp alex$ export history.txt
+-bash: export: `history.txt': not a valid identifier
+Alexs-MacBook:tmp alex$ 
+Alexs-MacBook:tmp alex$ export -
+-bash: export: `-': not a valid identifier
+Alexs-MacBook:tmp alex$ export -help
+-bash: export: -h: invalid option
+export: usage: export [-nf] [name[=value] ...] or export -p
+Alexs-MacBook:tmp alex$ export -p
+declare -x Apple_PubSub_Socket_Render="/private/tmp/com.apple.launchd.1B0TsqPsCH/Render"
+declare -x HOME="/Users/alex"
+declare -x LANG="de_DE.UTF-8"
+declare -x LOGNAME="alex"
+declare -x OLDPWD="/"
+declare -x PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+declare -x PWD="/tmp"
+declare -x SHELL="/bin/bash"
+declare -x SHLVL="1"
+declare -x SSH_AUTH_SOCK="/private/tmp/com.apple.launchd.NbhGsKzF6U/Listeners"
+declare -x TERM="xterm-256color"
+declare -x TERM_PROGRAM="Apple_Terminal"
+declare -x TERM_PROGRAM_VERSION="343.7"
+declare -x TERM_SESSION_ID="D5FC52F8-3EC0-477D-9291-A5048B766B1C"
+declare -x TMPDIR="/var/folders/hj/xs0kzk2d1d74cxnn_1hts1kr0000gn/T/"
+declare -x USER="alex"
+declare -x XPC_FLAGS="0x0"
+declare -x XPC_SERVICE_NAME="0"
+declare -x __CF_USER_TEXT_ENCODING="0x1F5:0x0:0x3"
+Alexs-MacBook:tmp alex$ export -h
+-bash: export: -h: invalid option
+export: usage: export [-nf] [name[=value] ...] or export -p
+Alexs-MacBook:tmp alex$ export file history.txt
+-bash: export: `history.txt': not a valid identifier
+Alexs-MacBook:tmp alex$ export history.txt
+-bash: export: `history.txt': not a valid identifier
+Alexs-MacBook:tmp alex$ export -f histoty.txt
+-bash: export: histoty.txt: not a function
+Alexs-MacBook:tmp alex$ export -h
+-bash: export: -h: invalid option
+export: usage: export [-nf] [name[=value] ...] or export -p
+Alexs-MacBook:tmp alex$ export -nf file.txt
+-bash: export: file.txt: not a function
+Alexs-MacBook:tmp alex$ export -nf /tmp/history.txt
+-bash: export: /tmp/history.txt: not a function
+Alexs-MacBook:tmp alex$ export -f /tmp/history.txt
+-bash: export: /tmp/history.txt: not a function
+Alexs-MacBook:tmp alex$ export_file /tmp/history.txt
+-bash: export_file: command not found
+Alexs-MacBook:tmp alex$ export-file /tmp/history.txt
+-bash: export-file: command not found
+Alexs-MacBook:tmp alex$ export file /tmp/history.txt
+-bash: export: `/tmp/history.txt': not a valid identifier
+Alexs-MacBook:tmp alex$ export file history.txt
+-bash: export: `history.txt': not a valid identifier
+Alexs-MacBook:tmp alex$ export  history.txt
+-bash: export: `history.txt': not a valid identifier
+Alexs-MacBook:tmp alex$ cd..
+-bash: cd..: command not found
+Alexs-MacBook:tmp alex$ cd ..
+Alexs-MacBook:/ alex$ cd
+Alexs-MacBook:~ alex$ history
+    1  /Users/alex/Google\ Drive/AG\ NA/Gründung/AmtG.\ Jena\(Fall-1\) ; exit;
+    2  vi
+    3  rdw
+    4  ls -la
+    5  mkdir  /tmp
+    6  ls -la
+    7  touch  /tmp/file.txt 
+    8  vi  /tmp/file.txt 
+    9*  df -h >> /tmp/
+   10  vi  /tmp/file1.txt 
+   11  df -h |head 3 >>  /tmp/file.txt 
+   12  df -h |head >>  /tmp/file.txt 
+   13  cat /tmp/file.txt 
+   14  df -h |head -3 >>  /tmp/file.txt 
+   15  df -h |head -3 >>  /tmp/file.txt 
+   16  cat /tmp/file.txt 
+   17  rm /tmp/file.txt 
+   18  tree /tmp
+   19  ls la /tmp
+   20  vi  /tmp/file.txt 
+   21  cat /tmp/file.txt 
+   22  ls la /tmp
+   23  ls -la /tmp
+   24  vi  /tmp/file.txt 
+   25  ls -la /tmp
+   26  mkdir /tmp
+   27  vi  /tmp/file.txt 
+   28  ls -la /tmp
+   29  cd tmp
+   30  cd /tmp
+   31  cd root
+   32  cd ..
+   33  cd /tmp
+   34  tree /temp
+   35  ls
+   36  cat file.txt
+   37  df -h |head -3 >>  file.txt
+   38  cat file.txt
+   39  ls
+   40  ls -la
+   41  file1.txt gw+
+   42  file1.txt chmod  gw+
+   43  file1.txt chmod  gw
+   44  chmod  gw file.txt
+   45  chmod  gw+ file.txt
+   46  chmod  gw+ /file.txt
+   47  chmod  gw+ temp/file.txt
+   48  chmod  gw file.txt
+   49  chmod gw+ file.txt
+   50  ls -la
+   51  chmod  ugo w+ file.txt
+   52  chmod  gw+ file.txt
+   53  chmod  gw file.txt
+   54  chmod 664 file.txt
+   55  ls -la
+   56  chmod 264 file.txt
+   57  ls -la
+   58  chmod 375 file.txt
+   59  ls -la
+   60  history
+   61  export_histoty
+   62  export_file1.txt
+   63  history> /tmp/history.txt
+   64  cat /history.txt
+   65  cat history.txt
+   66  export_file history.txt 
+   67  export_file /tmp/history.txt 
+   68  export_file /tmp/history.txt
+   69  ls -la
+   70  cat history.txt
+   71  export_file history.txt 
+   72  export_file /tmp/history.txt
+   73  export /tmp/history.txt
+   74  export history.txt
+   75  export -
+   76  export -help
+   77* export 
+   78  export -h
+   79  export file history.txt
+   80  export history.txt
+   81  export -f histoty.txt
+   82  export -h
+   83  export -nf file.txt
+   84  export -nf /tmp/history.txt
+   85  export -f /tmp/history.txt
+   86  export_file /tmp/history.txt
+   87  export-file /tmp/history.txt
+   88  export file /tmp/history.txt
+   89  export file history.txt
+   90  export  history.txt
+   91  cd..
+   92  cd ..
+   93  cd
+   94  history
+Alexs-MacBook:~ alex$ 
