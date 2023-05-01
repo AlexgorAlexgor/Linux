@@ -1,0 +1,297 @@
+[ec2-user@ip-172-31-33-20 alexgor]$ ls -la
+insgesamt 132
+drwxrwxr-x  2 ec2-user ec2-user     75 27. Apr 11:25 .
+drwxrwxr-x 18 ec2-user ec2-user    310 21. Apr 07:31 ..
+-rwxrwxr-x  1 ec2-user ec2-user    674 21. Apr 17:24 file.txt
+-rw-r--r--  1 ec2-user ec2-user 125984 22. Apr 06:05 java_error_in_idea_822.log
+-rwxr--r--  1 ec2-user ec2-user    169  1. Mai 19:08 myscript.sh
+[ec2-user@ip-172-31-33-20 alexgor]$ cd .
+[ec2-user@ip-172-31-33-20 alexgor]$ shh ec2-user@linux.telran-edu.de:/opt/280223_m/alexgor/myscript.sh nataliaawerschina@/nataliaawerschina/IVAN/myscript.sh
+-bash: shh: Kommando nicht gefunden.
+[ec2-user@ip-172-31-33-20 alexgor]$ exit
+Abgemeldet
+Connection to linux.telran-edu.de closed.
+Natalias-iMac:~ nataliaawerschina$ scp ec2-user@linux.telran-edu.de:/opt/280223_m/alexgor/myscript.sh /Users/nataliaawerschina/IVAN/Linux_Homework_3/myscript.sh
+myscript.sh                                                                                                                            100%  169     4.8KB/s   00:00    
+Natalias-iMac:~ nataliaawerschina$ scp ec2-user@linux.telran-edu.de:/tmp/alexander.txt /Users/nataliaawerschina/IVAN/Linux_Homework_3/alexander.txt
+alexander.txt                                                                                                                          100%  110     3.1KB/s   00:00    
+Natalias-iMac:~ nataliaawerschina$ history
+    1  person
+    2  ls
+    3  ls tail
+    4  ls| tail
+    5  ls| head 21
+    6  ls| head 4
+    7  ls| head 4
+    8  cd ..
+    9  ..
+   10  cd ..
+   11  cd 
+   12  df -h
+   13  cd ..
+   14  clear
+   15  history
+   16  echo'fruit'
+   17  echo 'dfjj'
+   18  echo 'Saschaj'
+   19  ls -la
+   20  ls -l
+   21  echo 'dfjj'wv --
+   22  wc --help
+   23  cd history
+   24  history
+   25  history >history.txt
+   26   cat history.txt
+   27  ls
+   28  ls -la
+   29  ls -la
+   30  vi /home/file1.txt
+   31  nano
+   32  ls
+   33  ls -la
+   34  ls /home
+   35  joe
+   36  vi
+   37  vi
+   38  env
+   39  echo'hello'
+   40  echo'hello'
+   41  echo'hello'
+   42  cd
+   43  ls
+   44  ls -l
+   45  ls -la
+   46  ls -a
+   47  joe
+   48  appt
+   49  apt
+   50  jshell
+   51  cd
+   52  ssh-keygen
+   53  cat .ssh/id_rsa.pub
+   54  ssh -i ~/.ssh/id_rsa ec2-user@linux.telran-edu.de
+   55  ssh -i ~/.ssh/id_rsa ec2-user@linux.telran-edu.de
+   56  ssh -i ~/.ssh/id_rsa ec2-user@linux.telran-edu.de
+   57  ssh  ec2-user@linux.telran-edu.de
+   58  ssh -i ~/.ssh/id_rsa ec2-user@linux.telran-edu.de
+   59  scp [OPTION] [user@]SRC_HOST:]file1 [user@]DEST_HOST:]file2
+   60  vi file.txt
+   61  cat file.txt
+   62  scp file1.txt ec2-user@linux.telran-edu.de/opt/280223_m/alexgor
+   63  scp file1.txt ec2-user@linux.telran-edu.de/opt/280223_m/alexgor/file1.txt
+   64  scp file1.txt ec2-user@linux.telran-edu.de:/opt/280223_m/alexgor
+   65  scp file1.txt ec2-user@linux.telran-edu.de:/opt/280223_m/alexgor/Users/nataliaawerschina/file1.tx
+   66  cat file.txt
+   67  scp file1.txt ec2-user@linux.telran-edu.de:/opt/280223_m/alexgor/Users/nataliaawerschina/file1.txt
+   68  scp ./file1.txt ec2-user@linux.telran-edu.de:/opt/280223_m/alexgor/
+   69  pwd
+   70  scp /Users/nataliaawerschina/file1.txt ec2-user@linux.telran-edu.de:/opt/280223_m/alexgor/
+   71  scp Users/nataliaawerschina/file1.txt ec2-user@linux.telran-edu.de:/opt/280223_m/alexgor/
+   72  scp Users/nataliaawerschina/file1.txt  ec2-user@linux.telran-edu.de:/opt/280223_m/alexgor
+   73  scp Users/nataliaawerschina/file1.txt  ec2-user@linux.telran-edu.de:/opt/280223_m/alexgor/.file.txtjava_error_in_id
+   74  scp Users/nataliaawerschina/java_error_in_idea_822.log  ec2-user@linux.telran-edu.de:/opt/280223_m/alexgor
+   75  scp Users/nataliaawerschina/java_error_in_idea_822.log  ec2-user@linux.telran-edu.de:/opt/280223_m/alexgor/java_error_in_idea_822.log
+   76  scp Natalias-iMac:~ nataliaawerschina/file1.txt  ec2-user@linux.telran-edu.de:/opt/280223_m/alexgor
+   77  ssh -i ~/.ssh/id_rsa ec2-user@linux.telran-edu.de
+   78  cd  Natalias-iMac:~ nataliaawerschina/
+   79  cd User/nataliaawerschina/
+   80  cd ..
+   81  pwd
+   82  ls -la
+   83  jshell
+   84  pwd
+   85  erv
+   86  erw
+   87  help
+   88  env
+   89  ..
+   90  cd
+   91  cd ..
+   92  echo $PACH
+   93  evn
+   94  cd
+   95  evn
+   96  env
+   97  echo $PATH
+   98  export ALEX=21.04
+   99  env
+  100  export ALEX>>".2023"
+  101  env
+  102  export ALEX>>2023
+  103  env
+  104  export $ALEX>>2023
+  105  ALEX>>2023
+  106  export "$ALEX>>2023"
+  107  export "$ALEX:2023"
+  108  export $ALEX:"2023"
+  109  export $ALEX="2023"
+  110  env
+  111  export $ALEX
+  112  export ALEX
+  113  env
+  114  export "2023">>$ALEX
+  115  "2023">>$ALEX
+  116  export $ALEX
+  117  export "$ALEX=$ALEX:.2023"
+  118  export "$ALEX=$ALEX:2023"
+  119  export "ALEX=$ALEX:2023"
+  120  echo $ALEX
+  121  export "ALEX=$ALEXGav"
+  122  echo $ALEX
+  123  export "ALEX=$ALEX:Gav"
+  124  echo $ALEX
+  125  export "ALEX=$ALEX Gav"
+  126  echo $ALEX
+  127  echo $PATH
+  128  export
+  129  export "ALEX=$ALEX /Users/nataliaawerschina/IVAN"
+  130  export
+  131  export "PAHT=$PATH /Users/nataliaawerschina/IVAN"
+  132  export
+  133  cd/Users/nataliaawerschina
+  134  cd/Users/nataliaawerschina/IVAN
+  135  cd:/Users/nataliaawerschina/IVAN
+  136  ls Users/nataliaawerschina/IVAN
+  137  ls -la Users/nataliaawerschina/IVAN
+  138  ls -la Macintosh HD/Users/nataliaawerschina/IVAN
+  139  ls -la Macintosh
+  140  ls -la MacintoshHD
+  141  tree
+  142  ..
+  143  cd ..
+  144  cd
+  145  tree
+  146  ls -la
+  147  cd /Music
+  148  cd :/Music
+  149  cd  Natalias-iMac:/nataliaawerschina/
+  150  cd  /nataliaawerschina/
+  151  ssh
+  152  ssh -i ~/.ssh/id_rsa ec2-user@linux.telran-edu.de
+  153  cd :/Music
+  154  scp ec2-user@
+  155  scp ec2-user@linux.telran-edu.de/opt/280223_m/alexgor/
+  156  clear
+  157  demo.txt scp ec2-user@linux.telran-edu.de/opt/280223_m/alexgor/demo.txt
+  158  export $env=demo.txt
+  159  export "$env=demo.txt"
+  160   env|demo.txt"
+  161   env|demo.txt
+  162   env>demo.txt
+  163  cat demo.txt
+  164  demo.txt scp ec2-user@linux.telran-edu.de/opt/280223_m/alexgor/demo.txt
+  165  scp ec2-user@linux.telran-edu.de/opt/280223_m/alexgor/demo.txt demo.txt 
+  166  scp ec2-user@linux.telran-edu.de/opt/280223_m/alexgor/demo.txt ~demo.txt 
+  167  ls -la
+  168  chmod 777 demo.txt 
+  169  ls -la
+  170  scp ec2-user@linux.telran-edu.de/opt/280223_m/alexgor/demo.txt ~demo.txt 
+  171  scp ec2-user@linux.telran-edu.de/opt/280223_m/alexgor/demo.txt demo.txt 
+  172  scp ec2-user@linux.telran-edu.de/opt/280223_m/alexgor/demo.txt nataliaawerschina@Natalias-iMac:~ nataliaawerschina/demo.txt 
+  173  scp ec2-user@linux.telran-edu.de/opt/280223_m/alexgor/demo.txt nataliaawerschina@nataliaawerschina/demo.t
+  174  export
+  175  scp ec2-user@linux.telran-edu.de/opt/280223_m/alexgor/demo.txt nataliaawerschina@nataliaawerschina/demo.txt
+  176  cd bin
+  177  cd /bin
+  178  ls _la
+  179  ls -la
+  180  cd..
+  181  cd ..
+  182  ls -la
+  183  ls -l
+  184  ls -a
+  185  cd
+  186  ls -a
+  187  ..
+  188  cd ..
+  189  ls -a
+  190  ls -la
+  191  pwd
+  192  cd 
+  193  pwd
+  194  ..
+  195  cd ..
+  196  pwd
+  197  cd ..
+  198  pwd
+  199  ls -la
+  200  cd .
+  201  pwd
+  202  cd
+  203  pwd
+  204  ls -la
+  205  ls -laclear
+  206  clear
+  207  ls -la
+  208  clear
+  209  pwd
+  210  scp file.txt ec2-user@linux.telran-edu.de:/opt/200223_m/alexgor/file.txt
+  211  scp ALEX  ec2-user@linux.telran-edu.de:/opt/200223_m/alexgor/file.txt
+  212  scp $ALEX  ec2-user@linux.telran-edu.de:/opt/200223_m/alexgor/file.txt
+  213  scp .file  ec2-user@linux.telran-edu.de:/opt/200223_m/alexgor/file.txt
+  214  scp ls  ec2-user@linux.telran-edu.de:/opt/200223_m/alexgor/file.txt
+  215  pwd
+  216  scp nataliaawerschina@Users/nataliaawerschina/file.txt ec2-user@linux.telran-edu.de:/opt/200223_m/alexgor/file.txt
+  217  scp nataliaawerschina@Natalias-iMac:Users/nataliaawerschina/file.txt ec2-user@linux.telran-edu.de:/opt/200223_m/alexgor/file.txtssh
+  218  scp nataliaawerschina@Natalias-iMac:Users/nataliaawerschina/file.txt ec2-user@linux.telran-edu.de:/opt/200223_m/alexgor/file.txt
+  219  shh
+  220  ssh
+  221  ssh
+  222  ssh -i ~/.ssh/id_rsa ec2-user@linux.telran-edu.de
+  223  scp nataliaawerschina@Natalias-iMac:Users/nataliaawerschina/file.txt ec2-user@linux.telran-edu.de:/opt/200223_m/alexgor/file.txt
+  224  ls -la
+  225  cat file.txt 
+  226  ls -l
+  227  ls -a
+  228  cat nataliaawerschina@Natalias-iMac:Users/nataliaawerschina/file.txt 
+  229  cat Natalias-iMac:Users/nataliaawerschina/file.txt 
+  230  cat Users/nataliaawerschina/file.txt 
+  231  cat nataliaawerschina/file.txt 
+  232  cat file.txt 
+  233  pdw
+  234  pwd
+  235  cat /Users/nataliaawerschina/demo.txt
+  236  scp /Users/nataliaawerschina/demo.txt ec2-user@linux.telran-edu.de:/opt/200223_m/alexgor/file.txt
+  237  scp B9_Home /Users/nataliaawerschina/demo.txt ec2-user@linux.telran-edu.de:/opt/200223_m/alexgor/file.txt
+  238  scp /Users/nataliaawerschina/demo.txt ec2-user@linux.telran-edu.de:/opt/200223_m/alexgor/file.txt
+  239  scp B9_Home@/Users/nataliaawerschina/demo.txt ec2-user@linux.telran-edu.de:/opt/200223_m/alexgor/file.txt
+  240  scp /Users/nataliaawerschina/demo.txt ec2-user@linux.telran-edu.de:/opt/200223_m/alexgor/file.txt
+  241  scp /Users/nataliaawerschina/demo.txt ec2-user@linux.telran-edu.de:/opt/200223_m/alexgor/file.txt
+  242  scp /Users/nataliaawerschina/demo.txt ec2-user@linux.telran-edu.de:/opt/280223_m/alexgor/file.txt
+  243  ssh
+  244  ssh ec2-user@linux.telran-edu.de:/opt/280223_m/alexgor/file.txt
+  245  ssh ec2-user@linux.telran-edu.de
+  246  scp ec2-user@linux.telran-edu.de:/opt/280223_m/alexgor/file.txt /Users/nataliaawerschina/demo1.txt
+  247  cat file.txt 
+  248  cat demo1.txt 
+  249  pwd
+  250  export
+  251  ssh ec2-user@linux.telran-edu.de
+  252  scp /Users/nataliaawerschina/java_error_in_idea_822.log ec2-user@linux.telran-edu.de:/opt/280223_m/alexgor/java_error_in_idea_822.log
+  253  ssh ec2-user@linux.telran-edu.de
+  254  scp ec2-user@linux.telran-edu.de:/opt/280223_m/alexgor/java_error_in_idea_822.log /Users/nataliaawerschina/userlog.log
+  255  export
+  256  ls -a
+  257  cat userlog.log 
+  258  cat userlog.log clear
+  259  clear
+  260  env
+  261  ssh ec2-user@linux.telran-edu.de
+  262  ssh ec2-user@linux.telran-edu.de
+  263  ls -a
+  264  ls -la
+  265  export >>file.txt 
+  266  cat file.txt 
+  267  history >>file.txt 
+  268  cat file.txt 
+  269  ls -la
+  270  export_file file.txt 
+  271  ssh ec2-user@linux.telran-edu.de
+  272  ssh ec2-user@linux.telran-edu.de
+  273  exit
+  274  ssh ec2-user@linux.telran-edu.de
+  275  scp ec2-user@linux.telran-edu.de:/opt/280223_m/alexgor/myscript.sh /Users/nataliaawerschina/IVAN/Linux_Homework_3/myscript.sh
+  276  scp ec2-user@linux.telran-edu.de:/tmp/alexander.txt /Users/nataliaawerschina/IVAN/Linux_Homework_3/alexander.txt
+  277  history
+Natalias-iMac:~ nataliaawerschina$ history | >> /Users/nataliaawerschina/IVAN/Linux_Homework_3/alexander.txt
+Natalias-iMac:~ nataliaawerschina$ histo
