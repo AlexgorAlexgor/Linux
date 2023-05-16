@@ -1,0 +1,10 @@
+  447* 
+  448  scp ec2-user@linux.telran-edu.de:/opt/280223_m/alexgor/taskAlex.sh /Users/nataliaawerschina/Linux/Linux_Homework_5/taskAlex.sh
+  449  ssh -i ~/.ssh/id_rsa ec2-user@linux.telran-edu.de
+  450  scp ec2-user@linux.telran-edu.de:/opt/280223_m/alexgor/taskAlexor.txt /Users/nataliaawerschina/Linux/Linux_Homework_5/taskAlexgor.txt
+  451  scp ec2-user@linux.telran-edu.de:/opt/280223_m/alexgor/taskAlexor.txt /Users/nataliaawerschina/Linux/Linux_Homework_5/taskAlexgor.txt
+  452  scp -r ec2-user@linux.telran-edu.de:/opt/280223_m/alexgor/ /Users/nataliaawerschina/Linux/Linux_Homework_5/
+  453  history 
+  454  history | tail -15
+  455  history | tail -10
+  456  history | tail -10 > /Users/nataliaawerschina/Linux/Linux_Homework_5/taskAlex_history.txt

@@ -1,0 +1,13 @@
+insgesamt 80
+drwxrwxr-x  2 ec2-user ec2-user  4096 16. Mai 16:55 .
+drwxrwxr-x 19 ec2-user ec2-user   331  9. Mai 12:01 ..
+-rw-r--r--  1 ec2-user ec2-user     0 16. Mai 16:46 10164642.txt
+-rw-r--r--  1 ec2-user ec2-user     0 16. Mai 16:45 1164512.txt
+-rw-r--r--  1 ec2-user ec2-user     0 16. Mai 16:45 2164522.txt
+-rw-r--r--  1 ec2-user ec2-user     0 16. Mai 16:45 3164532.txt
+-rw-r--r--  1 ec2-user ec2-user     0 16. Mai 16:45 4164542.txt
+-rw-r--r--  1 ec2-user ec2-user     0 16. Mai 16:45 5164552.txt
+-rw-r--r--  1 ec2-user ec2-user     0 16. Mai 16:46 6164602.txt
+-rw-r--r--  1 ec2-user ec2-user     0 16. Mai 16:46 7164612.txt
+-rw-r--r--  1 ec2-user ec2-user     0 16. Mai 16:46 8164622.txt
+-rw-r--r--  1 ec2-user ec2-user     0 16. Mai 16:46 9164632.txt
